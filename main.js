@@ -10,10 +10,15 @@ var roastSelection = document.querySelector('#roast-selection');
 //search function
 var userSelection = document.querySelector('#userSearch');
 
+//Local Storage Code
+let itemsArray = [];
+window.localStorage.setItem('addedCoffee', JSON.stringify(itemsArray))
+var data = JSON.parse(window.localStorage.getItem('addedCoffee'))
 
 //  <==================================== ADD COFFEE ====================================>
 var createCoffee = document.querySelector('#submit');
-createCoffee.addEventListener('click', function () {
+createCoffee.addEventListener('click', function (e) {
+    e.preventDefault();
     var addCoffeeRoast = document.getElementById("add-coffee");
     var newCoffeeName = document.getElementById('newInput');
 
@@ -22,6 +27,7 @@ createCoffee.addEventListener('click', function () {
         updateCoffees();
     }
 });
+
 
 //  <==================================== RENDERING COFFEES ====================================>
 function renderCoffee(coffee) {
@@ -44,7 +50,7 @@ function renderCoffees(coffees) {
 
 //  <============================= FILTER COFFEES AND SEARCH INPUT =============================>
 var updateCoffees = function () {
-    // e.preventDefault(); // don't submit the form, we just want to update the data
+     // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var userSelectedCoffee = userSelection.value;
     var filteredCoffees = [];
@@ -66,9 +72,14 @@ var newCoffee = function (type, name) {
     var newCoffeeObj = {id: coffees.length + 1, name: name, roast: type};
     console.log(newCoffeeObj);
     coffees.push(newCoffeeObj);
+    itemsArray.push(newCoffeeObj)
     console.log(coffees);
+    // var storeAddedCoffee = window.localStorage.setItem('newCoffee', JSON.stringify(newCoffeeObj))
+    // console.log(storeAddedCoffee)
+    // var newData = JSON.parse(window.localStorage.getItem('newCoffee'))
 };
-// local.Storage.setItem(newCoffeeObj())
+
+
 //  <==================================== COFFEE TABLE ====================================>
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
