@@ -12,7 +12,16 @@ var userSelection = document.querySelector('#userSearch');
 
 
 //  <==================================== ADD COFFEE ====================================>
+var createCoffee = document.querySelector('#submit');
+createCoffee.addEventListener('click', function () {
+    var addCoffeeRoast = document.getElementById("add-coffee");
+    var newCoffeeName = document.getElementById('newInput');
 
+    if (newCoffeeName !== ""){
+        newCoffee(addCoffeeRoast.value, newCoffeeName.value);
+        updateCoffees();
+    }
+});
 
 //  <==================================== RENDERING COFFEES ====================================>
 function renderCoffee(coffee) {
@@ -51,22 +60,15 @@ var updateCoffees = function () {
 };
 
 
-// var bigSelect = document.querySelector('.options')
-// bigSelect.addEventListener('change', (event) => {
-//     if(`${event.target.value}` === '5') {
-//         map.setZoom(5)
-//     }
-//     if(`${event.target.value}` === '15') {
-//         map.setZoom(10)
-//     }
-//     if(`${event.target.value}` === '20') {
-//         map.setZoom(15)
-//     }
-// });
-
 //  <==================================== CREATE NEW COFFEE ====================================>
 
-
+var newCoffee = function (type, name) {
+    var newCoffeeObj = {id: coffees.length + 1, name: name, roast: type};
+    console.log(newCoffeeObj);
+    coffees.push(newCoffeeObj);
+    console.log(coffees);
+};
+// local.Storage.setItem(newCoffeeObj())
 //  <==================================== COFFEE TABLE ====================================>
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
