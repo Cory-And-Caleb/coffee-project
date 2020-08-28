@@ -17,7 +17,7 @@ var userSelection = document.querySelector('#userSearch');
 //  <==================================== RENDERING COFFEES ====================================>
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<div>' + coffee.name + '</div>';
+    html += '<h2>' + coffee.name + '</h2>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
@@ -26,7 +26,7 @@ function renderCoffee(coffee) {
 
 function renderCoffees(coffees) {
     var html = '';
-    for(var i = 0; i < coffees.length; i++) {
+    for (var i = 0; i < coffees.length; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -34,14 +34,15 @@ function renderCoffees(coffees) {
 
 
 //  <============================= FILTER COFFEES AND SEARCH INPUT =============================>
-var updateCoffees= function() {
+var updateCoffees = function () {
     // e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var userSelectedCoffee = userSelection.value;
     var filteredCoffees = [];
 
-    coffees.forEach(function(coffee) {
+    coffees.forEach(function (coffee) {
         if ((coffee.roast === selectedRoast) || selectedRoast === 'All') {
+            filteredCoffees.push(coffee);
             if (coffee.name.toLowerCase().includes(userSelectedCoffee.toLowerCase())){
                 filteredCoffees.push(coffee);
             }
@@ -50,6 +51,31 @@ var updateCoffees= function() {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 };
 
+//OG FUNCTION
+// function updateCoffees(e) {
+//     e.preventDefault(); // don't submit the form, we just want to update the data
+//     var selectedRoast = roastSelection.value;
+//     var filteredCoffees = [];
+//     coffees.forEach(function (coffee) {
+//         if (coffee.roast === selectedRoast) {
+//             filteredCoffees.push(coffee);
+//         }
+//     });
+//     tbody.innerHTML = renderCoffees(filteredCoffees);
+// }
+
+// var bigSelect = document.querySelector('.options')
+// bigSelect.addEventListener('change', (event) => {
+//     if(`${event.target.value}` === '5') {
+//         map.setZoom(5)
+//     }
+//     if(`${event.target.value}` === '15') {
+//         map.setZoom(10)
+//     }
+//     if(`${event.target.value}` === '20') {
+//         map.setZoom(15)
+//     }
+// });
 
 //  <==================================== CREATE NEW COFFEE ====================================>
 
@@ -76,8 +102,11 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 //  <================================== COFFEE EVENT LISTENERS ==================================>
+// var submitButton = document.querySelector('#submit');
+// submitButton.addEventListener('click', updateCoffees);
+
 roastSelection.addEventListener('change', updateCoffees);
-userSelection.addEventListener("keyup", function() {
+userSelection.addEventListener("keyup", function () {
     updateCoffees(userSelection.value);
 });
 
