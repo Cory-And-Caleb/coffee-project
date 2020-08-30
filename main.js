@@ -11,12 +11,12 @@ var roastSelection = document.querySelector('#roast-selection');
 var userSelection = document.querySelector('#userSearch');
 
 //Local Storage Code
-let itemsArray = [];
-window.localStorage.setItem('addedCoffee', JSON.stringify(itemsArray))
-var data = JSON.parse(window.localStorage.getItem('addedCoffee'))
+// let itemsArray = [];
+// localStorage.setItem('addedCoffee', JSON.stringify(itemsArray))
+// var data = JSON.parse(localStorage.getItem('addedCoffee'))
 
 //  <==================================== ADD COFFEE ====================================>
-var createCoffee = document.querySelector('#submit');
+var createCoffee = document.getElementById('submit');
 createCoffee.addEventListener('click', function (e) {
     e.preventDefault();
     var addCoffeeRoast = document.getElementById("add-coffee");
@@ -27,7 +27,6 @@ createCoffee.addEventListener('click', function (e) {
         updateCoffees();
     }
 });
-
 
 //  <==================================== RENDERING COFFEES ====================================>
 function renderCoffee(coffee) {
@@ -72,11 +71,8 @@ var newCoffee = function (type, name) {
     var newCoffeeObj = {id: coffees.length + 1, name: name, roast: type};
     console.log(newCoffeeObj);
     coffees.push(newCoffeeObj);
-    itemsArray.push(newCoffeeObj)
+    // itemsArray.push(newCoffeeObj)
     console.log(coffees);
-    // var storeAddedCoffee = window.localStorage.setItem('newCoffee', JSON.stringify(newCoffeeObj))
-    // console.log(storeAddedCoffee)
-    // var newData = JSON.parse(window.localStorage.getItem('newCoffee'))
 };
 
 
