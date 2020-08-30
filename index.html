@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
 <!--START OF NAV BAR -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-
     <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
         <ul class="navbar-nav w-100">
             <li class="d-flex align-items-center">
                 <a class="navbar-brand text-muted" href="#">The Split Bean</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,7 +45,7 @@
                 <i class="fa fa-mug-hot fa-lg"></i>
             </li>
             <li class="d-flex align-items-center">
-            <a href="#" class="badge badge-light text-secondary">Checkout</a>
+                <a href="#" class="badge badge-light text-secondary">Checkout</a>
             </li>
         </ul>
     </div>
@@ -68,19 +69,36 @@
 
 <!---ENDOFJUMBOVIDEO--->
 <!---TABS----->
-<section class="my-5">
+<section class="my-5 p-2">
     <div class="container">
         <div class="row m-o">
             <div class="col-md-12 d-flex justify-content-center">
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="coffeeList-tab" data-toggle="tab" href="#coffeeListTab" role="tab" aria-controls="coffeesList" aria-selected="true"> <button type="button" class="btn topButtons"><img class='topButtons imgBack' alt='coffeebeans' src="coffeebeans.jpg"> Our Coffee</button></a>
+                        <a class="nav-link active" id="coffeeList-tab" data-toggle="tab" href="#coffeeListTab"
+                           role="tab" aria-controls="coffeesList" aria-selected="true">
+                            <button type="button" class="btn topButtons"><img class='topButtons imgBack'
+                                                                              alt='coffeebeans' src="coffeebeans.jpg">
+                                Our Coffee
+                            </button>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab" aria-controls="locationsTab" aria-selected="false"><button type="button" class="btn topButtons"><img class='topButtons imgBack' alt='coffeebeans' src="coffeeMap.jpg">Locations</button></a>
+                        <a class="nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab"
+                           aria-controls="locationsTab" aria-selected="false">
+                            <button type="button" class="btn topButtons"><img class='topButtons imgBack'
+                                                                              alt='coffeebeans' src="coffeeMap.jpg">Locations
+                            </button>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab" aria-controls="contactTab" aria-selected="false"><button type="button" class="btn topButtons"><img class='topButtons imgBack' alt='coffeebeans' src="contact2.jpg">Contact Us</button></a>
+                        <a class="nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab"
+                           aria-controls="contactTab" aria-selected="false">
+                            <button type="button" class="btn topButtons"><img class='topButtons imgBack'
+                                                                              alt='coffeebeans' src="contact2.jpg">Contact
+                                Us
+                            </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -88,69 +106,75 @@
     </div>
 </section>
 <!----END OF TABS---->
-<div class="tab-pane fade show active" id="coffeeListTab" role="tabpanel" aria-labelledby="coffeeListTab">
-<!--    <div>-->
-<!--        <div>-->
-<!--            -->
-<!--        </div>-->
-<!--    </div>-->
-    <h1 class="d-flex justify-content-center">Coffee!</h1>
-
-    <section id="searchBar">
-        <div>
-            <label for="userSearch">Search Coffee</label>
-            <input type="text" name="coffeeSearch" id="userSearch" placeholder="Enter Coffee">
+<div class="container-fluid mb-5">
+    <div class="tab-pane fade show active row w-100 m-0" id="coffeeListTab" role="tabpanel"
+         aria-labelledby="coffeeListTab">
+        <div class="d-flex col-6">
+            <form class="mx-auto">
+                <label for="roast-selection">Filter Roast</label>
+                <select id="roast-selection">
+                    <option>All</option>
+                    <option>Light</option>
+                    <option>Medium</option>
+                    <option>Dark</option>
+                </select>
+                <section id="searchBar">
+                    <div>
+                        <label for="userSearch">Search Coffee</label>
+                        <input type="text" name="coffeeSearch" id="userSearch" placeholder="Enter Coffee">
+                    </div>
+                </section>
+            </form>
         </div>
-    </section>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>All</option>
-            <option>Light</option>
-            <option>Medium</option>
-            <option>Dark</option>
-        </select>
-    </form>
+        <div class="d-flex col-6">
+            <form class="mx-auto">
+                <label for="add-coffee">Filter Roast</label>
+                <select id="add-coffee">
+                    <option>All</option>
+                    <option>Light</option>
+                    <option>Medium</option>
+                    <option>Dark</option>
+                </select>
+                <div>
+                    <input type="text" id="newInput" placeholder="Add Coffee Here">
+                    <input type="submit" id="submit">
+                </div>
+            </form>
+        </div>
 
-    <form>
-        <label for="add-coffee">Add another Coffee</label>
-        <select id="add-coffee">
-            <option>All</option>
-            <option>Light</option>
-            <option>Medium</option>
-            <option>Dark</option>
-        </select>
-        <input type="text" id="newInput" placeholder="Add Coffee Here">
-        <input type="submit" id="submit">
-    </form>
-    <section id="coffees"></section>
+        <div id="coffeeListBackground" class="container-fluid">
+            <div class="row">
+                <div class="col px-5">
+                    <section class="d-flex flex-wrap justify-content-around" id="coffees"></section>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
-
+    <p>TAB2</p>
 </div>
 
 <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
-
+    <p>TAB3</p>
 </div>
 
 
-
-
-
-
-    <!-- Optional JavaScript -->
-    <script src="main.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<script src="main.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,12 +1,6 @@
-/*table {*/
-/*    border-collapse: collapse;*/
-/*    margin: 15px 0;*/
-/*}*/
+body {
 
-/*td, th {*/
-/*    border: 1px solid black;*/
-/*    padding: 5px 10px;*/
-/*}*/
+}
 
 nav {
     height: 75px;
@@ -87,4 +81,23 @@ header .overlay {
 
 .imgBack {
     position: relative;
+}
+
+.coffee {
+    width: 250px;
+    height: 250px;
+    border: 1px solid brown;
+    border-radius: 25%;
+}
+
+#coffeeBagPic {
+    background-image: url("coffeebag.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#coffeeListBackground {
+    background-image: url("coffeeMonsteraBackground.jpg");
+    background-repeat: no-repeat;
+
 }
