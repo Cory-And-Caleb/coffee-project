@@ -1,3 +1,12 @@
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
 body {
 
 }
@@ -46,21 +55,8 @@ header .overlay {
     z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-    header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-    }
-    header video {
-        display: none;
-    }
-}
-
 .nav-link:hover {
     text-decoration: none;
-    border: none;
-}
-
-#myTab {
     border: none;
 }
 
@@ -100,4 +96,10 @@ header .overlay {
     background-image: url("coffeeMonsteraBackground.jpg");
     background-repeat: no-repeat;
 
+}
+#nav-img {
+    height: 75px;
+}
+#myTab {
+    border: none;
 }

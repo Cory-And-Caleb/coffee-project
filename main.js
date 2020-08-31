@@ -10,10 +10,6 @@ var roastSelection = document.querySelector('#roast-selection');
 //search function
 var userSelection = document.querySelector('#userSearch');
 
-//Local Storage Code
-// let itemsArray = [];
-// localStorage.setItem('addedCoffee', JSON.stringify(itemsArray))
-// var data = JSON.parse(localStorage.getItem('addedCoffee'))
 
 //  <==================================== ADD COFFEE ====================================>
 var createCoffee = document.getElementById('submit');
