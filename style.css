@@ -59,6 +59,10 @@ header .overlay {
     z-index: 1;
 }
 
+#map {
+    width: 300px;
+    height: 300px;
+}
 .btnLink {
     border: 0 !important;
 }

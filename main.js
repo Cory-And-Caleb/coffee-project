@@ -102,6 +102,17 @@ userSelection.addEventListener("keyup", function () {
     updateCoffees(userSelection.value);
 });
 
+//  <================================== MAPBOX ==================================>
+mapboxgl.accessToken = MAPBOX_TOKEN;
+var start = [-98.486990, 29.411230];
+var end = [-98.486990, 29.411230];
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: start,
+    zoom: 12.5
+});
+
 
 
 
