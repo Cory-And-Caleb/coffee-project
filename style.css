@@ -8,7 +8,7 @@
 }
 
 body {
-
+    background-color: #fbe3b9;
 }
 
 nav {
@@ -64,19 +64,18 @@ header .overlay {
     border-radius: 50%;
     width: 135px;
     height: 135px;
-    border-color: sienna;
     color: sienna;
     font-size: 23px;
     padding: 0;
 }
 
+li>a:active {
+    background-color: #2d334a;
+}
+
 .topButtons:hover {
     color: saddlebrown;
     font-weight: bold;
-}
-
-.imgBack {
-    position: relative;
 }
 
 .coffee {
