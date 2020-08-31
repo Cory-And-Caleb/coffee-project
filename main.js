@@ -26,7 +26,7 @@ createCoffee.addEventListener('click', function (e) {
 
 //  <==================================== RENDERING COFFEES ====================================>
 function renderCoffee(coffee) {
-    var html = '<div id=coffeeBagPic class="d-block coffee m-3 btn p-4 bg-white">';
+    var html = '<div class="coffee m-3 btn p-3 bg-white"><img id=coffeeBagPic src="coffeebag.jpeg" alt=coffeeBag>';
     html += '<h2>' + coffee.name + '</h2>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';

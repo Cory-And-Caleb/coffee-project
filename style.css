@@ -82,15 +82,23 @@ header .overlay {
 .coffee {
     width: 250px;
     height: 250px;
-    border: 1px solid brown;
     border-radius: 25%;
+    box-shadow: 5px 10px 1px #bab7b7;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 
 #coffeeBagPic {
-    background-image: url("coffeebag.jpeg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    height: 150px;
+    width: 100px;
 }
+
+.coffee:hover {
+    -webkit-transform: scale(1.1);
+}
+
 
 #coffeeListBackground {
     background-image: url("coffeeMonsteraBackground.jpg");
