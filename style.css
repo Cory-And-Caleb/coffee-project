@@ -99,12 +99,11 @@ header .overlay {
     -webkit-transform: scale(1.1);
 }
 
-
 #coffeeListBackground {
-    background-image: url("coffeeMonsteraBackground.jpg");
-    background-repeat: no-repeat;
-
+    background-image: url("monstera-repeat1.jpg");
+    background-repeat: repeat;
 }
+
 #nav-img {
     height: 75px;
 }
