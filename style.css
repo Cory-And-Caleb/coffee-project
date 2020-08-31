@@ -7,9 +7,10 @@
     }
 }
 
-body {
-    background-color: #fbe3b9;
-}
+/*body {*/
+/*    background-image: url("textureBack.jpg");*/
+/*   */
+/*}*/
 
 nav {
     height: 75px;
@@ -82,7 +83,7 @@ li>a:active {
     width: 250px;
     height: 250px;
     border-radius: 25%;
-    box-shadow: 5px 10px 1px #bab7b7;
+    box-shadow: 5px 10px 1px #2d334a;
     -webkit-transition: all 0.5s ease-in-out;
 }
 
@@ -98,10 +99,10 @@ li>a:active {
     -webkit-transform: scale(1.1);
 }
 
-#coffeeListBackground {
-    background-image: url("monstera-repeat1.jpg");
-    background-repeat: repeat;
-}
+/*#coffeeListBackground {*/
+/*    background-image: url("monstera-repeat1.jpg");*/
+/*    background-repeat: repeat;*/
+/*}*/
 
 #nav-img {
     height: 75px;
