@@ -7,10 +7,9 @@
 /*    }*/
 /*}*/
 
-/*body {*/
-/*    background-image: url("textureBack.jpg");*/
-/*   */
-/*}*/
+body {
+    position: relative;
+}
 
 nav {
     height: 75px;
@@ -90,11 +89,13 @@ header .overlay {
 
 
 .coffee {
+    /*border: 1px solid #d4dbe3;*/
     width: 250px;
     height: 250px;
     border-radius: 25%;
-    box-shadow: 5px 10px 1px #2d334a;
     -webkit-transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 10px 10px 5px #2d334a;
+    box-shadow: 3px 4px 8px #2d334a;
 }
 
 #coffeeBagPic {
@@ -119,4 +120,99 @@ header .overlay {
 }
 #myTab {
     border: none;
+}
+
+/*---------------FOOTER-------------------*/
+footer {
+    background: #2d334a;
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+#footer {
+    min-width: 768px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer h1 {
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+}
+h5 {
+    color: white;
+    font-weight: 200;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer .icon-wrapper:hover,
+footer .top-footer a:hover,
+footer .bottom-footer a:hover {
+    -webkit-transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+}
+footer .container {
+    padding: 1.5em 0;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.icon-wrapper {
+    border: 2px solid grey;
+    border-radius: 2.4em;
+    height: 2.4em;
+    width: 2.4em;
+    display: flex;
+    margin-bottom: 1em;
+}
+.icon-wrapper i {
+    margin: auto;
+}
+.social-media-links {
+    display: flex;
+}
+footer .top-footer a {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+footer .bottom-footer a {
+    margin: .3em;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: grey;
+}
+.top-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.number_add {
+    text-align: center;
+}
+
+.bf_bar_info {
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.bottom-footer ul li:nth-child(6) {
+    margin-left: auto;
 }
