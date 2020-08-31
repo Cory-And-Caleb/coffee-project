@@ -6,10 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Mapbox CSS -->
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Mapbox JS -->
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Mapbox Geocoder Util Methods -->
     <script src="mapbox-geocoder-utils.js"></script>
     <!---- link keys ---->
@@ -83,12 +83,13 @@
             <div class="col-md-12 d-flex justify-content-center">
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="btnLink nav-link tabs" id="coffeeList-tab" data-toggle="tab" href="#coffeeListTab"
+                        <a class="btnLink nav-link active" id="coffeeList-tab" data-toggle="tab" href="#coffeeListTab"
                            role="tab" aria-controls="coffeesList" aria-selected="true">
                             <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="coffeebeans.jpg"><p class="mt-2">
-                                Our Coffee
-                            </p>
+                                                                              alt='coffeebeans' src="coffeebeans.jpg">
+                                <p class="mt-2">
+                                    Our Coffee
+                                </p>
                             </button>
                         </a>
                     </li>
@@ -96,7 +97,8 @@
                         <a class="btnLink nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab"
                            aria-controls="locationsTab" aria-selected="false">
                             <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="coffeeMap.jpg"><p class="mt-2">Locations</p>
+                                                                              alt='coffeebeans' src="coffeeMap.jpg">
+                                <p class="mt-2">Locations</p>
                             </button>
                         </a>
                     </li>
@@ -104,8 +106,9 @@
                         <a class="btnLink nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab"
                            aria-controls="contactTab" aria-selected="false">
                             <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="contact2.jpg"><p class="mt-2">Contact
-                                Us</p>
+                                                                              alt='coffeebeans' src="contact2.jpg">
+                                <p class="mt-2">Contact
+                                    Us</p>
                             </button>
                         </a>
                     </li>
@@ -115,62 +118,68 @@
     </div>
 </section>
 <!----END OF TABS---->
-<!--<div class="container-fluid mb-5">-->
+<div class="tab-content m-0 p-0" id="myTabContent">
+    <!----OUR COFFEE TAB----->
+
     <div class="container-fluid tab-pane fade show active row w-100 m-0" id="coffeeListTab" role="tabpanel"
          aria-labelledby="coffeeListTab">
-        <div class="d-flex col-6">
-            <form class="mx-auto">
-                <label for="roast-selection">Filter Roast</label>
-                <select id="roast-selection">
-                    <option>All</option>
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
-                </select>
-                <section id="searchBar">
-                    <div>
-                        <label for="userSearch">Search Coffee</label>
-                        <input type="text" name="coffeeSearch" id="userSearch" placeholder="Enter Coffee">
+        <section class="tab-content" id="myTabContent1">
+            <div class="tab-pane fade show active" role="tabpanel">
+                <div class="tab-pane d-flex col-6">
+                    <form class="mx-auto">
+                        <label for="roast-selection">Filter Roast</label>
+                        <select id="roast-selection">
+                            <option>All</option>
+                            <option>Light</option>
+                            <option>Medium</option>
+                            <option>Dark</option>
+                        </select>
+                        <section id="searchBar">
+                            <div>
+                                <label for="userSearch">Search Coffee</label>
+                                <input type="text" name="coffeeSearch" id="userSearch" placeholder="Enter Coffee">
+                            </div>
+                        </section>
+                    </form>
+                </div>
+
+                <div class="d-flex col-6">
+                    <form class="mx-auto">
+                        <label for="add-coffee">Filter Roast</label>
+                        <select id="add-coffee">
+                            <option>All</option>
+                            <option>Light</option>
+                            <option>Medium</option>
+                            <option>Dark</option>
+                        </select>
+                        <div>
+                            <input type="text" id="newInput" placeholder="Add Coffee Here">
+                            <input type="submit" id="submit">
+                        </div>
+                    </form>
+                </div>
+
+                <div id="coffeeListBackground" class="blend1 container-fluid">
+                    <div class="row">
+                        <div class="col px-5">
+                            <section class="d-flex flex-wrap justify-content-around" id="coffees"></section>
+                        </div>
+
                     </div>
-                </section>
-            </form>
-        </div>
-
-        <div class="d-flex col-6">
-            <form class="mx-auto">
-                <label for="add-coffee">Filter Roast</label>
-                <select id="add-coffee">
-                    <option>All</option>
-                    <option>Light</option>
-                    <option>Medium</option>
-                    <option>Dark</option>
-                </select>
-                <div>
-                    <input type="text" id="newInput" placeholder="Add Coffee Here">
-                    <input type="submit" id="submit">
                 </div>
-            </form>
-        </div>
-
-        <div id="coffeeListBackground" class="blend1 container-fluid mx-5">
-            <div class="row">
-                <div class="col px-5">
-                    <section class="d-flex flex-wrap justify-content-around" id="coffees"></section>
-                </div>
-
             </div>
-        </div>
-
+        </section>
     </div>
-<!--</div>-->
 
-<div class="tab-pane fade show active" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
-    <div id="map">
+    <!-------LOCATIONS TAB CONTENT----->
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
+                <div id="map">
+                </div>
     </div>
-</div>
-
-<div class="tab-pane fade show active" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
-    <p>TAB3</p>
+    <!---------CONTACT US TAB CONTENT------------->
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
+        <p>TAB3</p>
+    </div>
 </div>
 
 
