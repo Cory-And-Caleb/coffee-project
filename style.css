@@ -65,18 +65,17 @@ header .overlay {
     border-radius: 50%;
     width: 135px;
     height: 135px;
-    color: sienna;
+    color: #2d334a;
     font-size: 23px;
     padding: 0;
 }
 
-li>a:active {
-    background-color: #2d334a;
+.topButtons:hover {
+    font-weight: bold;
 }
 
-.topButtons:hover {
-    color: saddlebrown;
-    font-weight: bold;
+li>a:active {
+    background-color: #2d334a;
 }
 
 .coffee {
