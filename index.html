@@ -9,7 +9,7 @@
     <!-- Mapbox JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <!-- Mapbox CSS -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet'/>
     <!-- Mapbox Geocoder Util Methods -->
     <script src="mapbox-geocoder-utils.js"></script>
     <!---- link keys ---->
@@ -121,7 +121,7 @@
 <div class="tab-content m-0 p-0" id="myTabContent">
     <!----OUR COFFEE TAB----->
 
-    <div class="container-fluid tab-pane fade show active row w-100 m-0" id="coffeeListTab" role="tabpanel"
+    <div class="container-fluid tab-pane fade row w-100 m-0" id="coffeeListTab" role="tabpanel"
          aria-labelledby="coffeeListTab">
         <section class="tab-content" id="myTabContent1">
             <div class="tab-pane fade show active" role="tabpanel">
@@ -173,12 +173,48 @@
 
     <!-------LOCATIONS TAB CONTENT----->
     <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
-                <div id="map">
-                </div>
+        <div id="map">
+        </div>
     </div>
     <!---------CONTACT US TAB CONTENT------------->
-    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
-        <p>TAB3</p>
+    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
+        <div class="container">
+            <form class="mx-5">
+                <div class="d-flex justify-content-around">
+                <div class="form-group ">
+                    <label for="exampleFormControlInput1">First Name</label>
+                    <input type="email" class="form-control" id=""
+                           placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Last Name</label>
+                    <input type="email" class="form-control" id=""
+                           placeholder="Last Name">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                           placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Reason for Contact</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option placeholder=""></option>
+                        <option>Delivery Issues</option>
+                        <option>Payment</option>
+                        <option>Check On An Order</option>
+                        <option>Technical Support</option>
+                        <option>Customer Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Additional Feedback</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary btn-sm" type="button">Submit</button>
+            </form>
+        </div>
     </div>
 </div>
 
