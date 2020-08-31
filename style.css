@@ -16,6 +16,9 @@ nav {
     height: 75px;
 }
 
+select {
+
+}
 header {
     position: relative;
     background-color: black;
@@ -56,6 +59,10 @@ header .overlay {
     z-index: 1;
 }
 
+.btnLink {
+    border: 0 !important;
+}
+
 .nav-link:hover {
     text-decoration: none;
     border: none;
@@ -74,9 +81,6 @@ header .overlay {
     font-weight: bold;
 }
 
-li>a:active {
-    background-color: #2d334a;
-}
 
 .coffee {
     width: 250px;
