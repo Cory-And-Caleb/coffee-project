@@ -16,9 +16,12 @@ createCoffee.addEventListener('click', function (e) {
     var addCoffeeRoast = document.getElementById("add-coffee");
     var newCoffeeName = document.getElementById('newInput');
 
+    //  line 63
     if (newCoffeeName !== ""){
         newCoffee(addCoffeeRoast.value, newCoffeeName.value);
+    //  line 46
         updateCoffees();
+    //  line 104
     }
 });
 
@@ -40,7 +43,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
-//  <============================= FILTER COFFEES AND SEARCH INPUT =============================>
+//  <============================= UPDATE COFFEES =============================>
 var updateCoffees = function () {
     // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
