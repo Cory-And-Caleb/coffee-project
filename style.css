@@ -1,14 +1,7 @@
-/*@media (pointer: coarse) and (hover: none) {*/
-/*    header {*/
-/*        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
-/*    }*/
-/*    header video {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
 
 body {
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -118,6 +111,10 @@ header .overlay {
     border: none;
 }
 
+.contactSubmit {
+    background-color: #2d334a;
+    color: white;
+}
 input[type=submit] {
     color: white;
     padding:5px 10px;
