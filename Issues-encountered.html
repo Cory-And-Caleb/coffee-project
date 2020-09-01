@@ -6,12 +6,22 @@ display the filtered results by roast. For example our property value set
 for our object in our js file contained a lower case 'l' for light, whereas
 in our HTML Light contained an upper case 'L'.
 
-2.Local Storage - Had issues getting
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+2.Local Storage - type out explaination
+3.map.resize()
+
+
+1.js functionality
+    *   event listener from submit to on 'keyup'
+    *   issue with roast.selection changed the case for roast type to match HTML and js
+    *   add coffee function:
+            - event listener to our submit button
+            - moved e.preventDefault() to createCoffee to keep page from reloading
+                when the submit button is pressed
+            - vars for event listeners addCoffeeRoast/newCoffeeName
+            - newCoffee() creating new obj and adds to coffee array
+            - then if condition in addCoffee() checks if the input is not an empty string
+            - then runs newCoffee() and then runs updateCoffees();
+
+2.localStorage/map.resize() - Caleb
+3.HTML & CSS- Cory
+

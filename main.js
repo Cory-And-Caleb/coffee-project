@@ -113,6 +113,8 @@ var map = new mapboxgl.Map({
     center: start,
     zoom: 12.5
 });
+
+
 //add event listener to link to locations tab, then add in the map.resize()
 
 
