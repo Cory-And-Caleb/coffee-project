@@ -40,10 +40,9 @@ function renderCoffees(coffees) {
     return html;
 }
 
-
 //  <============================= FILTER COFFEES AND SEARCH INPUT =============================>
 var updateCoffees = function () {
-     // don't submit the form, we just want to update the data
+    // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var userSelectedCoffee = userSelection.value;
     var filteredCoffees = [];
@@ -65,10 +64,10 @@ var newCoffee = function (type, name) {
     var newCoffeeObj = {id: coffees.length + 1, name: name, roast: type};
     console.log(newCoffeeObj);
     coffees.push(newCoffeeObj);
-    // itemsArray.push(newCoffeeObj)
+    localStorage.removeItem('coffees')
+    localStorage.setItem('coffees', JSON.stringify(coffees))
     console.log(coffees);
 };
-
 
 //  <==================================== COFFEE TABLE ====================================>
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -88,6 +87,11 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'Dark'},
     {id: 14, name: 'French', roast: 'Dark'},
 ];
+if (localStorage.getItem('coffees') === null) {
+    localStorage.setItem('coffees', JSON.stringify(coffees))
+} else {
+    coffees = JSON.parse(localStorage.getItem('coffees'))
+}
 tbody.innerHTML = renderCoffees(coffees);
 
 
@@ -109,7 +113,6 @@ var map = new mapboxgl.Map({
     center: start,
     zoom: 12.5
 });
-
 //add event listener to link to locations tab, then add in the map.resize()
 
 
