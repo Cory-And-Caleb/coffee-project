@@ -121,15 +121,15 @@
     </div>
 </section>
 <!----END OF TABS---->
-<div class="tab-content my-0 p-0 mb-5" id="myTabContent">
+<div class="tab-content p-0 mb-5" id="myTabContent">
     <!----OUR COFFEE TAB----->
 
     <div class="container-fluid tab-pane fade row w-100 m-0 show active" id="coffeeListTab" role="tabpanel"
          aria-labelledby="coffeeListTab">
-        <section class="tab-content" id="myTabContent1">
+        <section class="tab-content pt-1">
             <div class="tab-pane fade show active" role="tabpanel">
-                <div class="d-flex">
-                    <div class="d-flex col-6 justify-content-center">
+                <div class="d-flex my-5" id="myTabContent1">
+                    <div class="d-flex col-6 justify-content-end">
                         <form>
                             <div>
                                 <label for="roast-selection">Filter Roast</label>
@@ -140,14 +140,14 @@
                                     <option>Dark</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="mt-2">
                                 <label for="userSearch">Search Coffee</label>
                                 <input type="text" name="coffeeSearch" id="userSearch" placeholder="Enter Coffee">
                             </div>
                         </form>
                     </div>
 
-                    <div class="d-flex col-6 justify-content-center">
+                    <div class="d-flex col-6 justify-content-start pl-5">
                         <form>
                             <label for="add-coffee">Filter Roast</label>
                             <select id="add-coffee">
@@ -156,9 +156,9 @@
                                 <option>Medium</option>
                                 <option>Dark</option>
                             </select>
-                            <div>
+                            <div class="mt-2 pl-4">
                                 <input type="text" id="newInput" placeholder="Add Coffee Here">
-                                <input type="submit" id="submit">
+                                <input class="ml-2" type="submit" id="submit">
                             </div>
                         </form>
                     </div>
@@ -177,20 +177,20 @@
 
     <!-------LOCATIONS TAB CONTENT----->
     <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
-        <div id="map">
+        <div class="pt-3" id="map">
         </div>
     </div>
     <!---------CONTACT US TAB CONTENT------------->
     <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
-        <div class="container">
-            <form class="mx-5">
-                <div class="d-flex justify-content-around">
-                    <div class="form-group ">
+        <div class="container py-3 w-50">
+            <form>
+                <div class="d-flex justify-content-center pt-2">
+                    <div class="form-group mr-4">
                         <label for="exampleFormControlInput1">First Name</label>
                         <input type="email" class="form-control"
                                placeholder="First Name">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group ml-4">
                         <label for="exampleFormControlInput1">Last Name</label>
                         <input type="email" class="form-control"
                                placeholder="Last Name">

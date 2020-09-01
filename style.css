@@ -110,16 +110,35 @@ header .overlay {
     -webkit-transform: scale(1.1);
 }
 
-/*#coffeeListBackground {*/
-/*    background-image: url("monstera-repeat1.jpg");*/
-/*    background-repeat: repeat;*/
-/*}*/
 
 #nav-img {
     height: 75px;
 }
 #myTab {
     border: none;
+}
+
+input[type=submit] {
+    color: white;
+    padding:5px 10px;
+    background: #2d334a;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding:8px;
+    border:0;
+    box-shadow: 3px 4px 8px #2d334a;
+    border-radius:10px;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    border-radius:10px;
 }
 
 /*---------------FOOTER-------------------*/
@@ -160,11 +179,10 @@ footer .bottom-footer a:hover {
 footer ul {
     list-style: none;
     margin: 0;
-    padding: 1em 0;
 }
 footer .container {
     padding: 1.5em 0;
-    height: 18em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -216,3 +234,6 @@ footer .bottom-footer a {
 .bottom-footer ul li:nth-child(6) {
     margin-left: auto;
 }
+
+/*----END OF FOOTER CSS----*/
+
