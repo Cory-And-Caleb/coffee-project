@@ -1,7 +1,5 @@
 "use strict"
 
-//!!!!!!!!!!NEED TO FIX FILTER BY ROAST DISPLAY
-//                  & ADD ADD COFFEE FUNCTION AND CREATE COFFEE FUNCTION!!!!!!!!!
 
 //  <==================================== VARIABLES ====================================>
 var tbody = document.querySelector('#coffees');
@@ -94,8 +92,6 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 //  <================================== COFFEE EVENT LISTENERS ==================================>
-// var submitButton = document.querySelector('#submit');
-// submitButton.addEventListener('click', updateCoffees);
 
 roastSelection.addEventListener('change', updateCoffees);
 userSelection.addEventListener("keyup", function () {
@@ -113,6 +109,7 @@ var map = new mapboxgl.Map({
     center: start,
     zoom: 12.5
 });
+
 //add event listener to link to locations tab, then add in the map.resize()
 
 

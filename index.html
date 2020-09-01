@@ -25,7 +25,7 @@
           rel="stylesheet">
 </head>
 <body>
-<!--START OF NAV BAR -->
+<!---------START OF NAV BAR ---------->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -61,8 +61,11 @@
         </ul>
     </div>
 </nav>
-<!--END OF NAV BAR-->
-<!--------JUMBOVIDEO--------->
+
+<!------------END OF NAV BAR---------->
+
+<!-------------JUMBOVIDEO------------->
+
 <header>
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -78,13 +81,16 @@
     </div>
 </header>
 
-<!---ENDOFJUMBOVIDEO--->
-<!---TABS----->
+<!-----------ENDOFJUMBOVIDEO---------->
+
+<!---------------TOP TABS---------------->
 <section class="my-5 p-2">
     <div class="container">
         <div class="row m-o">
             <div class="col-md-12 d-flex justify-content-center">
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+
+<!------------FIRST OUR COFFEE TAB------------>
                     <li class="nav-item">
                         <a class="btnLink nav-link active" id="coffeeList-tab" data-toggle="tab" href="#coffeeListTab"
                            role="tab" aria-controls="coffeesList" aria-selected="true">
@@ -96,6 +102,7 @@
                             </button>
                         </a>
                     </li>
+<!------------SECOND LOCATIONS TAB------------>
                     <li class="nav-item">
                         <a class="btnLink nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab"
                            aria-controls="locationsTab" aria-selected="false">
@@ -105,6 +112,7 @@
                             </button>
                         </a>
                     </li>
+<!-------------THIRD CONTACT TAB------------->
                     <li class="nav-item">
                         <a class="btnLink nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab"
                            aria-controls="contactTab" aria-selected="false">
@@ -120,15 +128,16 @@
         </div>
     </div>
 </section>
-<!----END OF TABS---->
-<div class="tab-content p-0 mb-5" id="myTabContent">
-    <!----OUR COFFEE TAB----->
+<!-----------------END OF TABS------------------>
 
+<div class="tab-content p-0 mb-5" id="myTabContent">
+<!-----------------CONTENTS OF OUR COFFEE TAB------------------>
     <div class="container-fluid tab-pane fade row w-100 m-0 show active" id="coffeeListTab" role="tabpanel"
          aria-labelledby="coffeeListTab">
         <section class="tab-content pt-1">
             <div class="tab-pane fade show active" role="tabpanel">
                 <div class="d-flex my-5" id="myTabContent1">
+<!-----------------SEARCH COFFEE FORM------------------>
                     <div class="d-flex col-6 justify-content-end">
                         <form>
                             <div>
@@ -146,7 +155,7 @@
                             </div>
                         </form>
                     </div>
-
+<!-----------------ADD COFFEE FORM------------------>
                     <div class="d-flex col-6 justify-content-start pl-5">
                         <form>
                             <label for="add-coffee">Filter Roast</label>
@@ -163,24 +172,25 @@
                         </form>
                     </div>
                 </div>
+<!-----------------COFFEE LIST SECTION------------------>
                 <div id="coffeeListBackground" class="blend1 container-fluid">
                     <div class="row">
                         <div class="col px-5">
                             <section class="d-flex flex-wrap justify-content-around" id="coffees"></section>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-------LOCATIONS TAB CONTENT----->
+<!-----------------LOCATIONS TAB CONTENT------------------>
     <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
         <div class="pt-3" id="map">
         </div>
     </div>
-    <!---------CONTACT US TAB CONTENT------------->
+
+<!-----------------CONTACT US TAB CONTENT------------------>
     <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
         <div class="container py-3 w-50">
             <form>
@@ -222,7 +232,7 @@
     </div>
 </div>
 
-<!--Footer-->
+<!---------------------------FOOTER---------------------->
 <footer>
     <div id="footer" class="container">
         <section class="top-footer">
@@ -278,6 +288,7 @@
         </section>
     </div>
 </footer>
+
 
 
 <!-- Optional JavaScript -->

@@ -4,13 +4,23 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*---------------NAV------------------*/
+
 nav {
     height: 75px;
 }
 
-select {
-
+.nav-link:hover {
+    text-decoration: none;
+    border: none;
 }
+
+#nav-img {
+    height: 75px;
+}
+
+/*---------------JUMBO VID-------------------*/
+
 header {
     position: relative;
     background-color: black;
@@ -51,21 +61,7 @@ header .overlay {
     z-index: 1;
 }
 
-#map {
-    /* the width and height may be set to any size */
-    width: 50%;
-    height: 600px;
-    margin: 0 auto;
-}
-
-.btnLink {
-    border: 0 !important;
-}
-
-.nav-link:hover {
-    text-decoration: none;
-    border: none;
-}
+/*---------------BUTTON TABS-------------------*/
 
 .topButtons {
     border-radius: 50%;
@@ -80,9 +76,40 @@ header .overlay {
     font-weight: bold;
 }
 
+.btnLink {
+    border: 0 !important;
+}
+
+#myTab {
+    border: none;
+}
+
+/*---------------COFFEE TAB-------------------*/
+
+select {
+    width: 200px;
+    padding: 5px;
+    border-radius:10px;
+}
+
+input[type=submit] {
+    color: white;
+    padding:5px 10px;
+    background: #2d334a;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding:8px;
+    border:0;
+    box-shadow: 3px 4px 8px #2d334a;
+    border-radius:10px;
+}
 
 .coffee {
-    /*border: 1px solid #d4dbe3;*/
     width: 250px;
     height: 250px;
     border-radius: 25%;
@@ -103,40 +130,21 @@ header .overlay {
     -webkit-transform: scale(1.1);
 }
 
+/*---------------LOCATIONS TAB-------------------*/
 
-#nav-img {
-    height: 75px;
+#map {
+    width: 50%;
+    height: 600px;
+    margin: 0 auto;
 }
-#myTab {
-    border: none;
-}
+
+/*---------------CONTACT US TAB-------------------*/
 
 .contactSubmit {
     background-color: #2d334a;
     color: white;
 }
-input[type=submit] {
-    color: white;
-    padding:5px 10px;
-    background: #2d334a;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
 
-input[type=text] {
-    padding:8px;
-    border:0;
-    box-shadow: 3px 4px 8px #2d334a;
-    border-radius:10px;
-}
-
-select {
-    width: 200px;
-    padding: 5px;
-    border-radius:10px;
-}
 
 /*---------------FOOTER-------------------*/
 footer {
